@@ -22,16 +22,14 @@ body{
 .grid{
     display: grid;
 }
-.text-white{
-    color: #FFFFFF;
-}
+
 .btn{
     background-image: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
     border-radius: 10000px;
 }
 
 
-/*main styels*/
+/*main styles*/
 
 /*header_part starts*/
 nav{
@@ -47,7 +45,7 @@ nav{
 }
 .wave{
     background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 nav ul li{
@@ -90,7 +88,51 @@ nav ul li{
     font-weight: 600;
     border-radius: 1000px;
 }
-
-
-
+.hero-description{
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+#hero-btn1, #hero-btn2{
+    padding: 12.5px 20px;
+}
 /*header_part ends*/
+
+/*main part*/
+
+/*about the podcast*/
+#about{
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+.about-des{
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 80px;
+}
+#about hr{
+    margin: 0 auto;
+    opacity: 10%;
+}
+.about-stats{
+    margin: 80px auto 120px auto;
+}
+
+/*why section*/
+#why{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.why-title{
+    margin-bottom: 40px;
+}
+.why-card{
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+.card{
+    padding: 40px; 
+}
+.card h3{
+    margin: 16px 0 16px 0;
+}
