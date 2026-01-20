@@ -66,6 +66,18 @@ nav ul li{
     padding: 12.5px 16px;
 }
 
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /*hero section*/
 #hero-section{
     background-image: url('../assets/hero-bg.png');
@@ -112,6 +124,13 @@ nav ul li{
 }
 #hero-btn1{
     margin-right: 6px;
+    
+}
+#hero-btn1:hover{
+    transform: scale(1.05);
+    background-size: 600% 600%;
+    animation: gradientMove 5s ease infinite;
+    transition: transform 0.2s ease;
 }
 /*header_part ends*/
 
@@ -208,4 +227,82 @@ nav ul li{
     margin-top: 32px;
     margin-bottom: 32px;
 
+}
+
+/*for small device*/
+@media screen and (max-width:576px) {
+    /* nav{
+        grid-template-columns: repeat(1, 1fr);
+    } */
+    
+    .nav-title,
+    .about-title,
+    .why-title,
+    .featured-title,
+    .host-title{
+        font-size: 2rem;
+    }
+    nav{
+        max-width: 440px;
+    }
+    header{
+        max-width: 440px;
+    }
+
+    #img-hero-circle{
+        position: absolute;
+        right: 800px;
+    }
+    #img-hero-microphone{
+        position: absolute;
+        
+    }
+    #new-badge{
+        position: absolute;
+        
+    }
+
+    #about{
+        padding-bottom: 60px;
+    }
+    
+    .about-stats{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .why-card{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+    .card{
+        text-align: left;
+        width: 400px;
+        max-height: 300px;
+        grid-row: auto;
+    }
+    #featured-episodes{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;        
+    }
+    #meet-the-host{
+        width: 400px;
+        text-align: center;
+    }
+    .host-info{
+        flex-direction: column;
+    }
+    .host-socials{
+        justify-content: center;
+    }
+    #footer{
+        background-size: cover;
+        background-repeat:no-repeat;
+        max-width: 440px;
+    }
+    .footer-content{
+        width: 400px;
+    }
+    .footer-title{
+        font-size: 3rem;
+    }
 }
