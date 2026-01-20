@@ -14,7 +14,9 @@ body{
     max-width: 1600px;
     margin: 0 auto;
 }
-
+:root{
+    --host-bg: rgba(53, 17, 101, 0.4);
+}
 /*shared style*/
 .flex{
     display: flex;
@@ -135,4 +137,39 @@ nav ul li{
 }
 .card h3{
     margin: 16px 0 16px 0;
+}
+
+/*featured section*/
+
+#featured{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+#featured-episodes{
+    margin: 40px auto 0 auto;
+    max-width: 1200px;
+}
+.featured-card{
+    max-width: 380px;
+}
+.featured-card > div{
+    padding: 24px;
+}
+.featured-card .featured-content > p{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/*meet-the-host*/
+
+#meet-the-host{
+    margin-top: 120px;
+}
+.host-info{
+    margin-top: 40px;
+    padding: 48.5px 40px;
+}
+.host-detail{
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
