@@ -47,7 +47,7 @@ nav{
 }
 .wave{
     background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 nav ul li{
@@ -67,11 +67,21 @@ nav ul li{
 }
 
 /*hero section*/
+#hero-section{
+    background-image: url('../assets/hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 760px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #img-hero-circle{
-    margin-top: -650px;
-    margin-left: 625px;
-    position: relative;
+    position: absolute;
+    top: 230px;
+    left: 670px;
 }
 #img-hero-microphone{
     position: absolute;
@@ -79,9 +89,9 @@ nav ul li{
     left: 785px;
 }
 #new-badge{
-    position: relative;
-    top: -315px;
-    left: 900px;
+    position: absolute;
+    top: 260px;
+    left: 940px;
 }
 #new-btn{
     background-color: #00FF88;
@@ -90,12 +100,18 @@ nav ul li{
     font-weight: 600;
     border-radius: 1000px;
 }
+.hero-content{
+    margin-top: 420px;
+}
 .hero-description{
     margin-top: 8px;
     margin-bottom: 24px;
 }
 #hero-btn1, #hero-btn2{
     padding: 12.5px 20px;
+}
+#hero-btn1{
+    margin-right: 6px;
 }
 /*header_part ends*/
 
@@ -172,4 +188,24 @@ nav ul li{
 .host-detail{
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+/*footer section*/
+
+#footer{
+    background-image: url('../assets/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 412px;
+}
+#footer .footer-content{
+    max-width: 1360px;
+    margin: auto;
+    height: 172px;
+}
+.footer-content ul{
+    margin-top: 32px;
+    margin-bottom: 32px;
+
 }
