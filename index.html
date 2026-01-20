@@ -12,24 +12,42 @@
       referrerpolicy="no-referrer"
     />
     <!--font awesome cdn ends-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Assignment_02</title>
   </head>
   <body class="font-inter">
     <header>
-      <nav>
-        <h3>Tech <span>Wave</span></h3>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Episodes</a></li>
-          <li><a href="">Host</a></li>
+      <nav class="grid">
+        <h3 class="nav-title text-white">Tech <span class="wave">Wave</span></h3>
+        <ul class="menu flex">
+          <li><a class="menu-item text-white" href="#">About</a></li>
+          <li><a class="menu-item text-white" href="#">Episodes</a></li>
+          <li><a class="menu-item text-white" href="#">Host</a></li>
         </ul>
-        <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="text-white btn nav-btn py-3 px-4 hover:cursor-pointer">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
       </nav>
-      <div id="hero-section">
-        <div class="hero-img"></div>
-        <div class="hero-content"></div>
-      </div>
+
+      <section id="hero-section">
+        <div class="hero-img">
+          <div><img src="./assets/hero-bg.png" alt=""></div>
+          <div><img id="img-hero-circle" src="./assets/hero-circle.png" alt=""></div>
+          <div><img id="img-hero-microphone" src="./assets/microphone.png" alt=""></div> 
+        </div>
+        <div id="new-badge" >
+          <button class="py-2 px-4 w-14 border-0" id="new-btn">NEW</button>
+        </div>
+        <div class="hero-content">
+          <div>
+            <h2 class="hero-title text-white">TechWave</h2>
+            <p class="text-white">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+          </div>
+          <button class="text-white"><i class="fa-brands fa-spotify"></i> Listen On Spotify</button>
+          <button class="text-[#00FF88]"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+        </div>
+      </section>
+
     </header>
     <main></main>
     <footer></footer>
